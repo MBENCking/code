@@ -1,0 +1,173 @@
+<mvc:View controllerName="treetable.controller.View"
+    xmlns="sap.ui.table"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:m="sap.m"
+        xmlns:u="sap.ui.unified"
+        xmlns:core="sap.ui.core"
+        height="100%">
+    <m:Page
+            showHeader="true"
+            enableScrolling="true">
+
+        <m:content>
+            <TreeTable
+                    id="TreeTableBasic"
+                    rows="{path:'/catalog/clothing', parameters: {arrayNames:['categories']}}"
+                    selectionMode="MultiToggle"
+                    enableSelectAll="false"
+                    ariaLabelledBy="title">
+                <extension>
+                    <m:OverflowToolbar style="Clear">
+                        <m:Title id="title" text="Plan potreba"/>
+                        <m:ToolbarSpacer/>                     
+                        <m:Button text="Prenesi Excell" press="onUpload" icon="sap-icon://upload"/>
+                    </m:OverflowToolbar>
+                </extension>
+                <columns>
+                    <Column width="13rem">
+                        <m:Label text="Categories"/>
+                        <template>
+                            <m:Text text="{name}" wrapping="false" />
+                        </template>
+                    </Column>
+                    <Column width="9rem">
+                        <m:Label text="Oj zahtjevatelj"/>
+                        <template>
+                             <m:Text text="{oj_zahtjevatelj}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Predmet nabave"/>
+                        <template>
+                             <m:Text text="{predmet_nabave}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="CPV"/>
+                        <template>
+                             <m:Text text="{cpv}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Vrijednost nabave"/>
+                        <template>
+                             <m:Text text="{vrijednost_nabave}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Valuta"/>
+                        <template>
+                             <m:Text text="{valuta}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Vrsta postupka"/>
+                        <template>
+                             <m:Text text="{vrsta_postupka}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Poseban režim nabave"/>
+                        <template>
+                             <m:Text text="{pos_rez_nabave}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Grupe"/>
+                        <template>
+                             <m:Text text="{Grupe}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Rezultat nabave"/>
+                        <template>
+                             <m:Text text="{rez_nabave}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Eu fond"/>
+                        <template>
+                             <m:Text text="{eu_fond}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Plan.poč.postupka"/>
+                        <template>
+                             <m:Text text="{plan_poc_post}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Plan.traj.ug.ili OS-a(mjeseci)"/>
+                        <template>
+                             <m:Text text="{plan tr_ug}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Obrazlozenje"/>
+                        <template>
+                             <m:Text text="{obrazlozenje}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Link"/>
+                        <template>
+                             <m:Text text="{link}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Županija"/>
+                        <template>
+                             <m:Text text="{zupanija}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Konto"/>
+                        <template>
+                             <m:Text text="{konto}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Prorač.konto"/>
+                        <template>
+                             <m:Text text="{proroc_konto}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Mjesto troška"/>
+                        <template>
+                             <m:Text text="{mj_troska}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Wbs"/>
+                        <template>
+                             <m:Text text="{wbs}"/>
+                        </template>
+                    </Column>
+                    <Column>
+                        <m:Label text="Program"/>
+                        <template>
+                             <m:Text text="{program}"/>
+                        </template>
+                    </Column>
+                     <Column>
+                        <m:Label text="Interni nalog"/>
+                        <template>
+                             <m:Text text="{interni_nalog}"/>
+                        </template>
+                    </Column>
+                     <Column>
+                        <m:Label text="OJ koja pokreće nabavu"/>
+                        <template>
+                             <m:Text text="{og_koja_pok_nabavu}"/>
+                        </template>
+                    </Column>
+                     
+
+
+
+                </columns>
+            </TreeTable>
+        </m:content>
+    </m:Page>
+</mvc:View>

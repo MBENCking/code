@@ -1,0 +1,45 @@
+{
+    "catalog": {
+      "clothing": {
+        "categories": [
+            {"name":"2021 Godina", "categories": [
+              {"name": "Sektor 100", "categories": [
+                {"name": "100", "oj_zahtjevatelj": 110, "predmet_nabave": "Čišćenje poslovnih prostora", "cpv": "90910000-9", "vrijednost_nabave": "750.000,0", "valuta": "HRK", "vrsta_postupka": "Otvoreni postupak", "pos_rez_nabave": "Rezervirani ugovor", "Grupe": "NE", "rez_nabave": "Ugovor", "eu_fond": "NE", "plan_poc_post": "II", "plan tr_ug": "1 godina",
+                                "obrazlozenje": "Temeljem zapisnika inspekcije", "link": "", "zupanija": "BJE-BIL", "konto": "4130000", "proroc_konto": "3232", "mj_troska": "d100", "wbs": "GRA-G-000128", "program": "0000001", "interni_nalog": "c100D010", "og_koja_pok_nabavu": "950" },
+                {"name": "100", "oj_zahtjevatelj": 120, "predmet_nabave": "Poštanske usluge", "cpv": "64110000-0", "vrijednost_nabave": "580.000,0", "valuta": "HRK", "vrsta_postupka": "Otvoreni postupak", "pos_rez_nabave": "Rezervirani ugovor", "Grupe": "NE", "rez_nabave": "Ugovor", "eu_fond": "NE", "plan_poc_post": "II", "plan tr_ug": "1 godina",
+                                    "obrazlozenje": "Temeljem zapisnika inspekcije", "link": "", "zupanija": "BJE-BIL", "konto": "4130000", "proroc_konto": "3232", "mj_troska": "d100", "wbs": "GRA-G-000128", "program": "0000001", "interni_nalog": "c100D010", "og_koja_pok_nabavu": "950" }
+                
+              ]},
+              
+              {"name": "Sektor 200", "categories": [
+                {"name": "Red Pant", "oj_zahtjevatelj": 32.99, "currency": "USD", "size": "M"},
+                {"name": "Skinny Jeans", "oj_zahtjevatelj": 44.99, "currency": "USD", "size": "S"},
+                {"name": "Black Jeans", "oj_zahtjevatelj": 99.99, "currency": "USD", "size": "XS"},
+                {"name": "Relaxed Fit Jeans", "oj_zahtjevatelj": 56.99, "currency": "USD", "size": "L"}
+              ]}
+          
+          
+              ]},
+
+              {"name":"2022 Godina", "categories": [
+                {"name": "Sektor 100", "categories": [
+                  {"name": "Casual Red Dress", "oj_zahtjevatelj": 16.99, "currency": "EUR", "size": "S"},
+                  {"name": "Short Black Dress", "oj_zahtjevatelj": 47.99, "currency": "EUR", "size": "M"},
+                  {"name": "Long Blue Dinner Dress", "oj_zahtjevatelj": 103.99, "currency": "USD", "size": "L"}
+                ]}
+
+                ]}
+        
+         
+            
+          
+          ]}
+  
+      },
+    "sizes": [
+      {"key": "XS", "value": "Extra Small"},
+      {"key": "S", "value": "Small"},
+      {"key": "M", "value": "Medium"},
+      {"key": "L", "value": "Large"}
+    ]
+    }

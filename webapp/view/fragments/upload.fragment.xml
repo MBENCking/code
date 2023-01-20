@@ -1,0 +1,59 @@
+
+	<core:FragmentDefinition
+	xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+    
+xmlns:u="sap.ui.unified">
+
+    
+	<Dialog title="Učitaj u plan potreba">
+          	<f:Form editable="true">
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="4"
+					labelSpanL="3"
+					labelSpanM="4"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="4"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="2"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+                        <f:FormElement label="Sektor">
+							<f:fields>
+								<Input />
+							</f:fields>
+						 </f:FormElement>
+
+                        <f:FormElement label="Godina">
+							<f:fields>
+								<Input />
+							</f:fields>
+						 </f:FormElement>
+
+
+                    <f:FormElement label="Excell file">
+                    	<f:fields>
+                            <u:FileUploader id="idfileUploader" sameFilenameAllowed="false" useMultipart="false" uploadUrl="/sap" placeholder="Choose a CSV file" style="Emphasized"></u:FileUploader>
+	                    </f:fields>
+                    </f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+    	<buttons>
+			<Button text="Cancel" press="onCancel"/>
+			<Button text="Prenesi u plan potreba" press="uploadFile"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
